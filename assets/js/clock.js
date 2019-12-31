@@ -1,14 +1,1 @@
-fClock = function setTime() {
-  var req = new XMLHttpRequest();
-  req.onreadystatechange = function () {
-    if (req.readyState == 4 && req.status == 200) {
-      var data = JSON.parse(req.responseText);
-      var tm = new Date(data.st * 1000);
-      document.getElementById("clock").textContent = tm.toLocaleString()
-    }
-  };
-  req.open("GET", 'https://ntp-a1.nict.go.jp/cgi-bin/json', false);
-  req.send(null);
-}
-window.onload = fClock
-setInterval(fClock, 950);
+fClock=function setTime(){var a=new XMLHttpRequest();a.onreadystatechange=function(){if(a.readyState==4&&a.status==200){var c=JSON.parse(a.responseText);var b=new Date(c.st*1000);document.getElementById("clock").textContent=b.toLocaleString()}};a.open("GET","https://ntp-a1.nict.go.jp/cgi-bin/json",false);a.send(null)};window.onload=fClock;setInterval(fClock,950);

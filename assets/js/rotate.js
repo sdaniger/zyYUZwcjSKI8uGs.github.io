@@ -1,0 +1,1 @@
+$("#icon").animate({yIndex:1},{duration:2000,step:function(a){$(this).css({transform:"rotateY("+(a*1080)+"deg)"})}});
