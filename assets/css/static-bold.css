@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'Static-Bold';
+    src: url("../fonts/Static-Bold.eot");
+    src: url("../fonts/Static-Bold.eot") format("embedded-opentype"), url("../fonts/Static-Bold.ttf") format("truetype"), url("../fonts/Static-Bold.woff") format("woff"), url("../fonts/Static-Bold.svg") format("svg");
+	font-weight: normal;
+    font-style: normal;
+}
+
+.Static-Bold {
+	font-family: 'Static-Bold'!important;
+}
