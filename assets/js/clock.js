@@ -13,7 +13,7 @@ worker.addEventListener('msg', function(e) {
   }, false);
   
   
-  window.onload = fClock = function() {
+fClock = function() {
 	worker.postMessage('a');
 }, setInterval(fClock, 950);
 
