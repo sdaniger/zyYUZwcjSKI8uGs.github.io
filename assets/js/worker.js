@@ -1,1 +1,0 @@
-var worker=new Worker('assets/js/clock.js');worker.postMessage('');
