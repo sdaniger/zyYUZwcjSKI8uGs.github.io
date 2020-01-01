@@ -1,9 +1,1 @@
-var worker = new Worker('assets/js/getTime.js');
-
-worker.addEventListener('message', function(e) {
-document.getElementById("clock").textContent = e.data.timeX;
-}, false);
-
-window.onload = fClock = function() {
-	worker.postMessage('');
-}, setInterval(fClock, 950);
+var worker=new Worker("assets/js/getTime.js");worker.addEventListener("message",function(e){document.getElementById("clock").textContent=e.data.timeX},!1),window.onload=fClock=function(){worker.postMessage("")},setInterval(fClock,950);
