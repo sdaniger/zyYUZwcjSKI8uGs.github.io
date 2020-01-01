@@ -7,7 +7,7 @@ worker.addEventListener('msg', function(e) {
 		if (4 == t.readyState && 200 == t.status) {
 			var e = JSON.parse(t.responseText),
 				n = new Date(1e3 * e.st);
-				document.getElementById("clock").textContent = x = n.toLocaleString()
+				x = n.toLocaleString()
 		}
 	}, t.open("GET", "https://ntp-a1.nict.go.jp/cgi-bin/json", !1), t.send(null)
   }, false);
@@ -15,5 +15,6 @@ worker.addEventListener('msg', function(e) {
   
 fClock = function() {
 	worker.postMessage('a');
+	document.getElementById("clock").textContent = x
 }, setInterval(fClock, 950);
 
