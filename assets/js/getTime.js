@@ -13,5 +13,5 @@ var t = new XMLHttpRequest;
 	self.postMessage({
 	timeX:x
 });
-}
+});
 
