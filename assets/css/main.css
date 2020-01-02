@@ -1585,8 +1585,8 @@ body::after {
   z-index: 9999; 
   pointer-events: none;
   opacity: 0;  
-  -webkit-transition: opacity .8s ease;
-  transition: opacity .8s ease;
+  -webkit-transition: opacity .7s ease;
+  transition: opacity .7s ease;
 }
 
 body.mov::after {

@@ -1,1 +1,1 @@
-$(function(){$('a:not([href^="#"]):not([target])').on("click",function(t){return t.preventDefault(),url=$(this).attr("href"),""!==url&&($("body").addClass("mov"),setTimeout(function(){window.location=url},800)),!1})});
+$(function(){$('a:not([href^="#"]):not([target])').on("click",function(t){return t.preventDefault(),url=$(this).attr("href"),""!==url&&($("body").addClass("mov"),setTimeout(function(){window.location=url},700)),!1})});
