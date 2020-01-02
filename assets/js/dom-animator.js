@@ -128,13 +128,7 @@ var DomAnimator = (function() {
     })
 });
 
-var domAni1 = new DomAnimator();
-domAni.addFrame("喧嘩もしたし　何度も別れようともしたけど
-君がいなけりゃつまらない
-Don’t stop music　丼 stop 寿司");
-domAni.animate(0);
-
-var domAni2 = new DomAnimator();
+var domAni = new DomAnimator();
 domAni.addFrame("関サバ　アジ　ホタテ");
 domAni.addFrame("ネギトロ　ブリ　穴子");
 domAni.addFrame("甘エビ　イカ　コハダ");
@@ -144,11 +138,3 @@ domAni.addFrame("大人のふりしてエンガワ");
 domAni.addFrame("サーモン大好きオンナ");
 domAni.addFrame("唐揚げ食うなよオトコ");
 domAni.animate(2000);
-
-var domAni3 = new DomAnimator();
-domAni.addFrame("へいらっしゃい
-寿司食べたい　この世の終わりの日は
-寿司食べたい　最後の晩餐に
-寿司食べたい　特別なあの日には
-寿司食べたい　トロ　タコ　ウニ　いくら");
-domAni.animate(0);
